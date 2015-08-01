@@ -1,0 +1,44 @@
+INTRO SCREEN:
+=====================
+YOU ARE A FUNHAUS FAN OF THE FUNHAUSES, AND YOU HAVE BEEN ZAPPED INTO HAUSBALL!
+
+Rules: Use the UP and DOWN arrow to move FUNHAUS MAN along the goal line. FUNHAUS MAN is to try to stop the Hausballs from getting past him. If a Hausball does go by, than FUNHAUS MAN looses a Hauslife. FUNHAUS MAN only has three Hauslives!
+
+Also, FUNHAUS MAN gets Hauspoints for saving a ball! Each save gets him 5 Hauspoints!
+Each GOAL on the other net gets FUNHAUS MAN even MORE Hauspoints!
+
+<PRESS SPACE TO START HAUSBALL>
+
+<PRESS ESC TO ESCAPE AT ANY TIME>
+
+Chooboogie
+
+** This project is strictly a fan project made in appreciation of FunHaus and the oodles of comedy and insight they have provided me. Take this code and project and do what you want with it. 
+================================
+
+ENDING SCREEN:
+================================
+THANK YOU FOR PLAYING HAUSBALL
+
+<PRESS SPACE BAR TO CONTINUE PLAYING>
+
+<PRESS ESC TO ESCAPE AT ANY TIME>
+
+Be sure to visit FunHaus! @FunHausTeam
+
+A VERY SPECIAL THANKS TO
+Nobody
+
+OTHER THANKS TO
+More Nobody
+Piotr
+
+MORE PEOPLE WHO CONTRIBUTED SOMEHOW
+Nobody 1
+Nobody 2
+
+HAUSBALL WAS CREATED BY
+Andrew Henninger - @databyss
+THERE IS NO HAUSBALL WEBSITE!
+
+** This project is strictly a fan project made in appreciation of FunHaus and the oodles of comedy and insight they have provided me. Take this code and project and do what you want with it. 
