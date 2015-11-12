@@ -13,17 +13,32 @@ public class GameController : MonoBehaviour {
     public int startingLives;
 
     private int score, lives;
+    private EventManager em;
     
 
 	// Use this for initialization
-	void Start () {
+	void OnEnable() {
         // Demo URL: https://www.youtube.com/watch?v=ySSQEJGHbNc&feature=youtu.be&t=3105
         lives = startingLives;
         UpdateScore();
         UpdateLives();
-	}
 
-	void Update() {
+        // subscribe to events
+        EventManager.StartListening("ball_scored", this.BallScored);
+        EventManager.StartListening("ball_blocked", this.BallBlocked);
+        EventManager.StartListening("goal_scored", this.BallScored);
+    }
+
+    // Use for destruction
+    void OnDisable()
+    {
+        // unsubscribe to events
+        EventManager.StopListening("ball_scored", this.BallScored);
+        EventManager.StopListening("ball_blocked", this.BallBlocked);
+        EventManager.StopListening("goal_scored", this.BallScored);
+    }
+
+    void Update() {
         // go to end screen on ESC
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -49,17 +64,17 @@ public class GameController : MonoBehaviour {
         livesText.text = "Lives: " + lives.ToString();
     }
 
-    public void GoalScored() {
+    void GoalScored() {
         score += goalPoints;
         UpdateScore();
     }
 
-    public void BallBlocked() {
+    void BallBlocked() {
         score += ballPoints;
         UpdateScore();
     }
 
-    public void BallScored() {
+    void BallScored() {
         lives -= 1;
         UpdateLives();
 

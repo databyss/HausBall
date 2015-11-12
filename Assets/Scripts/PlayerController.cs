@@ -7,18 +7,16 @@ public class PlayerController : MonoBehaviour {
     public float topYValue;
     public float bottomYValue;
 
-    private GameController gameController;
-
 	// Use this for initialization
 	void Start () {
-        gameController = GameObject.FindObjectOfType<GameController>();
+
 	}
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            gameController.BallBlocked();
+            EventManager.TriggerEvent("ball_blocked");
         }
     }
 

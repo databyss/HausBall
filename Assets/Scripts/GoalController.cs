@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class GoalController : MonoBehaviour {
 
-    private GameController gameController;
-
 	// Use this for initialization
 	void Start () {
-        gameController = GameObject.FindObjectOfType<GameController>();
+
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -17,7 +14,7 @@ public class GoalController : MonoBehaviour {
             // destroy the ball
             GameObject.Destroy(other.gameObject);
 
-            gameController.BallScored();
+            EventManager.TriggerEvent("ball_scored");
         }
     }
 }
